@@ -39,9 +39,9 @@ function editContact() {
 }
 
 function showContact() {
-  return contacts.map((index) =>
-    console.log("Name: " + index.name + " - Phone: " + index.phone)
-  );
+  for (var contact of contacts) {
+    console.log("Name: " + contact.name + " - Phone: " + contact.phone);
+  }
 }
 
 function deleteContact() {
